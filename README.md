@@ -14,3 +14,5 @@ I used:
 • PropTypes.
 • map() method.
 • some css magic.
+
+View project on evgenpletenskyi.github.io/movie_app/
