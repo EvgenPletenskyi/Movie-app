@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from "prop-types";
 import axios from 'axios'
 import Movie from './Movie';
 import "./App.css";
@@ -18,13 +17,11 @@ class App extends React.Component {
           movies },
       },
     } = await axios.get('https://yts.mx/api/v2/list_movies.json?sort_by=rating');
-    console.log(movies);
     this.setState({ movies, isLoading: false })
   };
 
   componentDidMount() {
     this.getMovies();
-    // setTimeout(()=>{this.setState({isLoading: false})}, 6000)
   }
 
   render() {
